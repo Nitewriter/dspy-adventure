@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dspy-adventure"
+version = "0.1.0"
+description = "A text adventure game built with DSPy"
+authors = ["Joel Garrett <106195533+joelgarrett@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "adventure" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+ipywidgets = "^8.1.2"
+jinja2 = "^3.1.3"
+tqdm = "^4.66.2"
+dspy = { git = "https://github.com/stanfordnlp/dspy.git" }
+python-dotenv = "^1.0.1"
+ipykernel = "^6.29.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
